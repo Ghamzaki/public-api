@@ -9,7 +9,7 @@ CORS(app)  # Enable CORS for all routes
 
 @app.route('/', methods=['GET'])
 def get_info():
-    # Prepare the response data
+    """ Prepare the response data """
     data = {
         "email": "uthmanghamzaki@gmail.com",
         "current_datetime": datetime.utcnow().isoformat() + "Z",
@@ -20,4 +20,4 @@ def get_info():
 
 # Run the app
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=10000)
+    app.run(host='0.0.0.0', port=10000) # Render required port
